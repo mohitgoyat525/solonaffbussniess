@@ -1,0 +1,14 @@
+:root {
+  --fs-18: 18px;
+  --fs-36: 36px;
+  --fs-48: 48px;
+  --fs-20: 20px;
+  --fs-24: 24px;
+
+  /* colors */
+  --red: #f4241e;
+  --darkyellow: #f6e300;
+  --lightyellow: #fff03f;
+  --black:#000000;
+  --white:#ffffff;
+}
