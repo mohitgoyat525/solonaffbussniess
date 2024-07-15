@@ -1,343 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>solanaFFbussniess</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/root.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!--------------------------nav-bar----------------------->
+    <header class="bg-yellow">
+      <div class="container">
+        <nav class="d-flex align-items-center justify-content-between">
+          <img src="./assets/images/logo.png" alt="logo" class="logo" />
+          <ul
+            id="nav-bar"
+            class="d-flex align-items-center justify-content-center gap-4 menu-bar"
+          >
+            <li><a href="/" class="nav-text">Home</a></li>
+            <li><a href="/" class="nav-text">About Us</a></li>
+            <li><a href="/" class="nav-text">Tokenomics</a></li>
+            <li><a href="/" class="nav-text">Roadmap</a></li>
+            <li><a href="/" class="nav-text">Contact</a></li>
+            <li><button class="connect-btn">Connect Wallet</button></li>
+          </ul>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>solanaFFbussniess</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="stylesheet" href="./assets/css/root.css" />
-  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
-</head>
-<body>
-  <!--------------------------nav-bar----------------------->
-  <header class="bg-yellow">
-    <div class="container">
-      <nav class="d-flex align-items-center justify-content-between">
-        <img src="./assets/images/logo.png" alt="logo" class="logo" />
-        <ul id="nav-bar" class="d-flex align-items-center justify-content-center gap-4 menu-bar">
-          <li><a href="/" class="nav-text">Home</a></li>
-          <li><a href="/" class="nav-text">About Us</a></li>
-          <li><a href="/" class="nav-text">Tokenomics</a></li>
-          <li><a href="/" class="nav-text">Roadmap</a></li>
-          <li><a href="/" class="nav-text">Contact</a></li>
-          <li> <button class="connect-btn">Connect Wallet</button></li>
-        </ul>
-      
-        <button onclick="navbtn()" class="menu-bar-btn d-lg-none z-3">
-          Menu
-        </button>
-      </nav>
-    </div>
-  </header>
-  <!-- -----------------section-one----------------------->
-  <section class="sec-one-img bg-yellow">
-    <img src="./assets/images/penguine.png" alt="worker" class="w-100"/>
-    <article class="position-relative pt-73 pb-133">
-      <div class="container ">
-        <img src="/assets/images/row-one-firstburger.png" alt="burger" class="position-absolute  burger-one">
-        <img src="./assets/images/row-one-secondburger.png" alt="burger" class="position-absolute burger-two">
-        <img src="./assets/images/row-one-thirdburger.png" alt="burger" class="position-absolute burger-three">
-        <img src="./assets/images/row-one-fourburger.png" alt="burger" class="position-absolute burger-four">
-        <img src="./assets/images/secondrow-burger-one.png" alt="burger" class="position-absolute burger-five">
-        <img src="./assets/images/secondrow-burger-two.png" alt="burger" class="position-absolute burger-six">
-        <img src="./assets/images/secondrow-burger-three.png" alt="burger" class="position-absolute burger-seven">
-        <img src="./assets/images/secondrow-burger-four.png" alt="burger" class="position-absolute burger-eight">
-        <div class="flex-column align-items-center">
-          <h2 class="welcome text-center">WELCOME TO</h2>
-          <div class="row position-relative justify-content-center">
-            <img src="./assets/images/logo-two.png" alt="logo" class="h-100 w-75 logo-img z-2">
-            <img src="./assets/images/we-are-open.png" alt="open" class="w-25 position-under-icon  position-absolute">
+          <button onclick="navbtn()" class="menu-bar-btn d-lg-none z-3">
+            Menu
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- -----------------section-one----------------------->
+    <section class="sec-one-img bg-yellow">
+      <img src="./assets/images/penguine.png" alt="worker" class="w-100" />
+      <article class="position-relative pt-73 pb-133">
+        <div class="container">
+          <img
+            src="/assets/images/row-one-firstburger.png"
+            alt="burger"
+            class="position-absolute burger-one"
+          />
+          <img
+            src="./assets/images/row-one-secondburger.png"
+            alt="burger"
+            class="position-absolute burger-two"
+          />
+          <img
+            src="./assets/images/row-one-thirdburger.png"
+            alt="burger"
+            class="position-absolute burger-three"
+          />
+          <img
+            src="./assets/images/row-one-fourburger.png"
+            alt="burger"
+            class="position-absolute burger-four"
+          />
+          <img
+            src="./assets/images/secondrow-burger-one.png"
+            alt="burger"
+            class="position-absolute burger-five"
+          />
+          <img
+            src="./assets/images/secondrow-burger-two.png"
+            alt="burger"
+            class="position-absolute burger-six"
+          />
+          <img
+            src="./assets/images/secondrow-burger-three.png"
+            alt="burger"
+            class="position-absolute burger-seven"
+          />
+          <img
+            src="./assets/images/secondrow-burger-four.png"
+            alt="burger"
+            class="position-absolute burger-eight"
+          />
+          <div class="flex-column align-items-center">
+            <h2 class="welcome text-center">WELCOME TO</h2>
+            <div class="row position-relative justify-content-center">
+              <img
+                src="./assets/images/logo-two.png"
+                alt="logo"
+                class="h-100 w-75 logo-img z-2"
+              />
+              <img
+                src="./assets/images/we-are-open.png"
+                alt="open"
+                class="w-25 position-under-icon position-absolute"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!----------------- section-2 ----------------------->
+    <section class="sec-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <div class="box">
+              <h3 class="it">It was popularised</h3>
+              <p class="solana">
+                Have you heard? We’re hiring! We have 3,333 working positions to
+                fill on the Solana blockchain. Once all positions are filled
+                it’s crucial to stay on your toes because the corporate penguins
+                are coming! Any penguins caught chilling on the floor when
+                corporate arrives will be immediately fired and swept away! This
+                makes SFFB a deflationary collection until we reach a maximum
+                staff of 1,666 mcnoots in total.
+              </p>
+              <button class="sec-3-btn">DISCOVER MORE</button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <img
+              src="./assets/images/section3-blue-img.png"
+              alt="img"
+              class="w-100 h-100 blue-img"
+            />
           </div>
         </div>
       </div>
-    </article>
-    
-  </section>
-  <!----------------- section-2 ----------------------->
-  <section class="sec-2">
-    <div class=" container">
-      <div class="row">
-        <div class="col-lg-6 col-12">
-          <div class="box">
-            <h3 class="it">It was popularised</h3>
-            <p class="solana">Have you heard? We’re hiring! We have 3,333 working positions to fill on the Solana
-              blockchain. Once all positions are filled it’s crucial to stay on your toes because the corporate penguins
-              are coming! Any penguins caught chilling on the floor when corporate arrives will be immediately fired and
-              swept away! This makes SFFB a deflationary collection until we reach a maximum staff of 1,666 mcnoots in
-              total.</p>
-            <button class="sec-3-btn">DISCOVER MORE</button>
+    </section>
+    <!-------------------images-section--------------------->
+    <section
+      class="bg-yellow images-section min-1136 justify-content-center align-items-center d-flex"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12 mt-4">
+            <img
+              src="./assets/images/image-section-img1.png"
+              alt="img"
+              class="w-100"
+            />
           </div>
-
+          <div class="col-lg-3 col-md-6 col-12 mt-4">
+            <img
+              src="./assets/images/image-section-img2.png"
+              alt="img"
+              class="w-100"
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mt-4">
+            <img
+              src="./assets/images/image-section-img3.png"
+              alt="img"
+              class="w-100"
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mt-4">
+            <img
+              src="./assets/images/image-section-img4.png"
+              alt="img"
+              class="w-100"
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mt-4">
+            <img
+              src="./assets/images/image-section-img5.png"
+              alt="img"
+              class="w-100"
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mt-4">
+            <img
+              src="./assets/images/image-section-img6.png"
+              alt="img"
+              class="w-100"
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mt-4">
+            <img
+              src="./assets/images/image-section-img7.png"
+              alt="img"
+              class="w-100"
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mt-4">
+            <img
+              src="./assets/images/image-section-img8.png"
+              alt="img"
+              class="w-100"
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mt-4">
+            <img
+              src="./assets/images/image-section-img9.png"
+              alt="img"
+              class="w-100"
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mt-4">
+            <img
+              src="./assets/images/image-section-img10.png"
+              alt="img"
+              class="w-100"
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mt-4">
+            <img
+              src="./assets/images/image-section-img11.png"
+              alt="img"
+              class="w-100"
+            />
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mt-4">
+            <img
+              src="./assets/images/image-section-img12.png"
+              alt="img"
+              class="w-100 mb-4"
+            />
+          </div>
         </div>
-        <div class="col-lg-6 col-12">
-          <img src="./assets/images/section3-blue-img.png" alt="img" class="w-100 h-100 blue-img">
+      </div>
+    </section>
+    <!----------------------bg-red-section----------------->
+    <section class="bg-red-section">
+      <div class="container">
+        <p class="text-center supplies">Supplies</p>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <p class="number-data mb-0 text-center">3,313</p>
+            <p class="public mb-0 text-center">Public Sale</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <p class="number-data mb-0 text-center">15</p>
+            <p class="public mb-0 text-center">Community Giveaways</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <p class="number-data mb-0 text-center">5</p>
+            <p class="public mb-0 text-center">Marketing / Influencers</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <p class="number-data mb-0 text-center">15</p>
+            <p class="public mb-0 text-center">Maximum Supply</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-------------------images-section--------------------->
-  <section class=" bg-yellow images-section min-1136 justify-content-center align-items-center d-flex">
-    <div class="container ">
-      <div class="row"> 
-      <div class=" col-lg-3 col-md-6 col-12 mt-4">
-        <img src="./assets/images/image-section-img1.png" alt="img" class="w-100">
-      </div>
-      <div class=" col-lg-3 col-md-6 col-12 mt-4">
-        <img src="./assets/images/image-section-img2.png" alt="img" class="w-100">
-      </div>
-      <div class=" col-lg-3 col-md-6 col-12 mt-4">
-        <img src="./assets/images/image-section-img3.png" alt="img" class="w-100">
-      </div>
-      <div class=" col-lg-3 col-md-6 col-12 mt-4">
-        <img src="./assets/images/image-section-img4.png" alt="img" class="w-100">
-      </div>
-      <div class=" col-lg-3 col-md-6 col-12 mt-4">
-        <img src="./assets/images/image-section-img5.png" alt="img" class="w-100">
-      </div>
-       <div class=" col-lg-3 col-md-6 col-12 mt-4">
-        <img src="./assets/images/image-section-img6.png" alt="img" class="w-100">
-      </div>
-       <div class=" col-lg-3 col-md-6 col-12 mt-4">
-        <img src="./assets/images/image-section-img7.png" alt="img" class="w-100">
-      </div>
-       <div class=" col-lg-3 col-md-6 col-12 mt-4">
-        <img src="./assets/images/image-section-img8.png" alt="img" class="w-100">
-      </div>
-       <div class=" col-lg-3 col-md-6 col-12 mt-4">
-        <img src="./assets/images/image-section-img9.png" alt="img" class="w-100">
-      </div>
-       <div class=" col-lg-3 col-md-6 col-12 mt-4">
-        <img src="./assets/images/image-section-img10.png" alt="img" class="w-100">
-      </div>
-       <div class=" col-lg-3 col-md-6 col-12 mt-4">
-        <img src="./assets/images/image-section-img11.png" alt="img" class="w-100">
-      </div>
-       <div class=" col-lg-3 col-md-6 col-12 mt-4">
-        <img src="./assets/images/image-section-img12.png" alt="img" class="w-100 mb-4">
-      </div>
-      </div>
-    </div>
-  </section>
-  <!----------------------bg-red-section----------------->
-  <section class="bg-red-section" >
-    <div class="container">
-      <p class="text-center supplies">Supplies</p>
-      <div class="row ">
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <p class="number-data mb-0 text-center">3,313</p>
-          <p class="public mb-0 text-center">Public Sale</p>
+    </section>
+    <!-- -------------------Time-line---------------------->
+    <section class="bg-yellow pt-73 pb-107 position-relative">
+      <img
+        src="./assets/images/timeline-left-burger-1.png"
+        alt="burger"
+        class="position-absolute left-burger-1"
+      />
+      <img
+        src="./assets/images/timeline-left-burger-2.png"
+        alt="burger"
+        class="position-absolute left-burger-2"
+      />
+      <img
+        src="./assets/images/timeline-left-burger-3.png"
+        alt="burger"
+        class="position-absolute left-burger-3"
+      />
+      <img
+        src="./assets/images/timeline-left-burger-4.png"
+        alt="burger"
+        class="position-absolute left-burger-4"
+      />
+      <img
+        src="./assets/images/timeline-right-burger-1.png"
+        alt="burger"
+        class="position-absolute right-burger-1"
+      />
+      <img
+        src="./assets/images/timeline-right-burger-2.png"
+        alt="burger"
+        class="position-absolute right-burger-2"
+      />
+      <img
+        src="./assets/images/timeline-right-burger-3.png"
+        alt="burger"
+        class="position-absolute right-burger-3"
+      />
+      <img
+        src="./assets/images/timeline-right-burger-4.png"
+        alt="burger"
+        class="position-absolute right-burger-4"
+      />
+      <div class="container">
+        <h2 class="roadmap mb-50 position-relative z-index-2 text-center">
+          ROADMAP 1.0
+        </h2>
+        <div class="timeline">
+          <div class="container-t left">
+            <div class="content">
+              <h2 class="timeline-font-1">Q4 2021</h2>
+              <p class="timeline-font-2 mt-10">1. Launch SFFB</p>
+              <p class="timeline-font-2">2. SELL OUT</p>
+              <p class="timeline-font-2">
+                3. Apply for secondary marketplace listings
+              </p>
+            </div>
+          </div>
+          <div class="container-t right">
+            <div class="content">
+              <h2 class="timeline-font-1">Q1 2022</h2>
+              <p class="timeline-font-2 mt-10">1. Charity Giveaway</p>
+              <p class="timeline-font-2">2. Launch Adopt-A-Penguin Program</p>
+              <p class="timeline-font-2">3. Secure Partnerships</p>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <p class="number-data mb-0 text-center">15</p>
-          <p class="public mb-0 text-center">Community Giveaways</p>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <p class="number-data mb-0 text-center">5</p>
-          <p class="public mb-0 text-center">Marketing / Influencers</p>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <p class="number-data mb-0 text-center">15</p>
-          <p class="public mb-0 text-center">Maximum Supply </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- -------------------Time-line---------------------->
-  <section class="bg-yellow pt-73 pb-107 position-relative">
-
-    <img src="./assets/images/timeline-left-burger-1.png" alt="burger" class="position-absolute left-burger-1">
-    <img src="./assets/images/timeline-left-burger-2.png" alt="burger" class="position-absolute left-burger-2">
-    <img src="./assets/images/timeline-left-burger-3.png" alt="burger" class="position-absolute left-burger-3">
-    <img src="./assets/images/timeline-left-burger-4.png" alt="burger" class="position-absolute left-burger-4">
-    <img src="./assets/images/timeline-right-burger-1.png" alt="burger" class="position-absolute right-burger-1">
-    <img src="./assets/images/timeline-right-burger-2.png" alt="burger" class="position-absolute right-burger-2">
-    <img src="./assets/images/timeline-right-burger-3.png" alt="burger" class="position-absolute right-burger-3">
-    <img src="./assets/images/timeline-right-burger-4.png" alt="burger" class="position-absolute right-burger-4">
-    <div class="container">
-      <h2 class="roadmap mb-50 position-relative z-index-2 text-center">ROADMAP 1.0</h2>
-      <div class="timeline">
         <div class="container-t left">
           <div class="content">
-            <h2 class="timeline-font-1 ">Q4 2021</h2>
-            <p class="timeline-font-2 mt-10">1. Launch SFFB</p>
-            <p class="timeline-font-2">2. SELL OUT</p>
-            <p class="timeline-font-2">3. Apply for secondary marketplace listings</p>
-          </div>
-        </div>
-        <div class="container-t right">
-          <div class="content">
-            <h2 class="timeline-font-1 ">Q1
-              2022</h2>
-            <p class="timeline-font-2 mt-10">1. Charity Giveaway</p>
-            <p class="timeline-font-2">2. Launch Adopt-A-Penguin Program
-            </p>
-            <p class="timeline-font-2">3. Secure Partnerships</p>
+            <h2 class="timeline-font-1">Q2 2022</h2>
+            <p class="timeline-font-2 mt-10">1. SFFB Merch Release</p>
+            <p class="timeline-font-2">2. Stay tune for Roadmap 2.0</p>
           </div>
         </div>
       </div>
-      <div class="container-t left">
-        <div class="content">
-          <h2 class="timeline-font-1 ">Q2
-            2022</h2>
-          <p class="timeline-font-2 mt-10">1. SFFB Merch Release
-          </p>
-          <p class="timeline-font-2">2. Stay tune for Roadmap 2.0
-
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- -------------------Team---------------------------->
-  <section class="team sec-2">
-    <div class="container">
-      <h3 class="team text-center">Team</h3>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="img-box-one">
-            <img src="./assets/images/team-member-one.png" alt="team-member" class="w-100">
-            <p class="jhon text-center">Jhone Doe</p>
-            <p class="manager text-center">Manager</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="img-box-one">
-            <img src="./assets/images/team-member-two.png" alt="team-member" class="w-100">
-            <p class="jhon text-center">Jhone Doe</p>
-            <p class="manager text-center">Manager</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="img-box-one">
-            <img src="./assets/images/team-member-three.png" alt="team-member" class="w-100">
-            <p class="jhon text-center">Jhone Doe</p>
-            <p class="manager text-center">Manager</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="img-box-one">
-            <img src="./assets/images/team-member-four.png" alt="team-member" class="w-100">
-            <p class="jhon text-center">Jhone Doe</p>
-            <p class="manager text-center">Manager</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- --------------------------accordian------------------- -->
-  <section class="faq bg-yellow">
-    <h1 class="text-center pt-5 pb-4">FAQ</h1>
-    <div class="d-flex align-items-center justify-content-center box-parents">
-
-      <div class="accordion h-100 w-50" id="accordionExample">
-        <div class="accordion-item boxs">
-          <h2 class="accordion-header">
-            <button class="accordion-button amet boxs" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
-           Amet vel eget nisi, sed ut massa turpis sodales nunc.
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
-            <div class="accordion-body boxs ">
-              <p class="enim-text"> Enim scelerisque quisque egestas velit, eget tempus, arcu pulvinar in. Quis sed at
-                sodales aliquam. Amet fermentum, lectus nulla tincidunt egestas.</p>
+    </section>
+    <!-- -------------------Team---------------------------->
+    <section class="team sec-2">
+      <div class="container">
+        <h3 class="team text-center">Team</h3>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="img-box-one">
+              <img
+                src="./assets/images/team-member-one.png"
+                alt="team-member"
+                class="w-100"
+              />
+              <p class="jhon text-center">Jhone Doe</p>
+              <p class="manager text-center">Manager</p>
             </div>
           </div>
-        </div>
-        <div class="accordion-item boxs">
-          <h2 class="accordion-header">
-            <button class="accordion-button amet boxs" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo"
-              aria-expanded="false" aria-controls="collapsetwo">
-           Amet vel eget nisi, sed ut massa turpis sodales nunc.
-            </button>
-          </h2>
-          <div id="collapsetwo" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
-            <div class="accordion-body boxs ">
-              <p class="enim-text"> Enim scelerisque quisque egestas velit, eget tempus, arcu pulvinar in. Quis sed at
-                sodales aliquam. Amet fermentum, lectus nulla tincidunt egestas.</p>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="img-box-one">
+              <img
+                src="./assets/images/team-member-two.png"
+                alt="team-member"
+                class="w-100"
+              />
+              <p class="jhon text-center">Jhone Doe</p>
+              <p class="manager text-center">Manager</p>
             </div>
           </div>
-        </div>
-
-        <div class="accordion-item boxs">
-          <h2 class="accordion-header">
-            <button class="accordion-button amet boxs" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
-             Amet vel eget nisi, sed ut massa turpis sodales nunc.
-            </button>
-          </h2>
-          <div id="collapsethree" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
-            <div class="accordion-body boxs ">
-              <p class="enim-text"> Enim scelerisque quisque egestas velit, eget tempus, arcu pulvinar in. Quis sed at
-                sodales aliquam. Amet fermentum, lectus nulla tincidunt egestas.</p>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="img-box-one">
+              <img
+                src="./assets/images/team-member-three.png"
+                alt="team-member"
+                class="w-100"
+              />
+              <p class="jhon text-center">Jhone Doe</p>
+              <p class="manager text-center">Manager</p>
             </div>
           </div>
-        </div>
-
-
-        <div class="accordion-item boxs">
-          <h2 class="accordion-header">
-            <button class="accordion-button amet boxs" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour"
-              aria-expanded="false" aria-controls="collapsefour">
-               Amet vel eget nisi, sed ut massa turpis sodales nunc.
-            </button>
-          </h2>
-          <div id="collapsefour" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
-            <div class="accordion-body boxs ">
-              <p class="enim-text"> Enim scelerisque quisque egestas velit, eget tempus, arcu pulvinar in. Quis sed at
-                sodales aliquam. Amet fermentum, lectus nulla tincidunt egestas.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item boxs">
-          <h2 class="accordion-header">
-            <button class="accordion-button boxs" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive"
-              aria-expanded="false" aria-controls="collapsefive">
-      Amet vel eget nisi, sed ut massa turpis sodales nunc.
-            </button>
-          </h2>
-          <div id="collapsefive" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
-            <div class="accordion-body boxs ">
-              <p class="enim-text"> Enim scelerisque quisque egestas velit, eget tempus, arcu pulvinar in. Quis sed at
-                sodales aliquam. Amet fermentum, lectus nulla tincidunt egestas.</p>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="img-box-one">
+              <img
+                src="./assets/images/team-member-four.png"
+                alt="team-member"
+                class="w-100"
+              />
+              <p class="jhon text-center">Jhone Doe</p>
+              <p class="manager text-center">Manager</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="logo">
-      <img src="./assets/images/logo-two.png" alt="logo" class="text-center w-50 foot-logo  mt-4 d-flex ">
-      <div class="icons mt-3  d-flex gap-2 align-items-center justify-content-center">
-        <a href="https://discord.com/" target="_blank"><svg width="72" height="55" viewBox="0 0 72 55" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M60.4905 4.98396C55.8572 2.85759 50.9681 1.33997 45.945 0.468922C45.8995 0.461258 45.8528 0.467878 45.8112 0.48787C45.7696 0.507863 45.7353 0.540247 45.7128 0.58057C45.0831 1.69705 44.3864 3.1574 43.8997 4.30067C38.4852 3.47898 32.9778 3.47898 27.5634 4.30067C27.0204 3.02708 26.4061 1.78508 25.7234 0.58057C25.7005 0.540689 25.6661 0.508678 25.6246 0.488749C25.5832 0.468821 25.5366 0.461909 25.4912 0.468922C20.467 1.33531 15.5769 2.85372 10.9457 4.98396C10.9061 4.99908 10.8729 5.02749 10.8519 5.06434C1.58964 18.9042 -0.951461 32.4046 0.294528 45.7354C0.298994 45.7979 0.339187 45.8604 0.388312 45.9006C5.7819 49.8959 11.8147 52.9463 18.2296 54.9218C18.2749 54.936 18.3236 54.9355 18.3686 54.9203C18.4135 54.905 18.4525 54.8758 18.4797 54.8369C19.8552 52.9612 21.0789 50.9828 22.1328 48.9017C22.1548 48.8588 22.1623 48.81 22.1543 48.7625C22.1462 48.7151 22.123 48.6715 22.0882 48.6382C22.0651 48.6164 22.0377 48.5997 22.0078 48.5891C20.0837 47.8496 18.2202 46.9612 16.4343 45.9319C16.3844 45.9036 16.3473 45.8572 16.3307 45.8024C16.3141 45.7475 16.3192 45.6883 16.345 45.6371C16.3602 45.6039 16.3832 45.5748 16.412 45.5523C16.7871 45.2709 17.1623 44.9762 17.5195 44.6814C17.5511 44.656 17.589 44.6397 17.6291 44.6342C17.6692 44.6287 17.7101 44.6342 17.7473 44.6502C29.4435 49.9914 42.1044 49.9914 53.6577 44.6502C53.6963 44.6335 53.7387 44.6275 53.7803 44.633C53.822 44.6386 53.8614 44.6553 53.8944 44.6814C54.2516 44.9762 54.6268 45.2709 55.0019 45.5523C55.0323 45.5745 55.0567 45.6039 55.073 45.6379C55.0892 45.6718 55.0968 45.7093 55.095 45.7469C55.0933 45.7845 55.0822 45.8211 55.0628 45.8534C55.0435 45.8856 55.0164 45.9126 54.9841 45.9319C53.2022 46.9706 51.3364 47.858 49.4061 48.5846C49.3753 48.5958 49.3474 48.6136 49.3242 48.6367C49.3011 48.6599 49.2833 48.6878 49.2722 48.7186C49.2618 48.7484 49.2577 48.7801 49.26 48.8115C49.2623 48.843 49.271 48.8737 49.2855 48.9017C50.3574 50.9784 51.5855 52.9612 52.9342 54.8369C52.9614 54.8758 53.0004 54.905 53.0454 54.9203C53.0903 54.9355 53.139 54.936 53.1843 54.9218C59.6099 52.9524 65.6525 49.9016 71.0524 45.9006C71.0794 45.8819 71.1019 45.8573 71.1181 45.8287C71.1344 45.8001 71.144 45.7682 71.1462 45.7354C72.6378 30.3235 68.6497 16.9347 60.5798 5.06881C60.5717 5.04921 60.5596 5.03153 60.5442 5.01692C60.5288 5.0023 60.5105 4.99107 60.4905 4.98396ZM23.879 37.6164C20.3554 37.6164 17.457 34.383 17.457 30.4173C17.457 26.4471 20.3018 23.2138 23.879 23.2138C27.483 23.2138 30.3546 26.4739 30.301 30.4173C30.301 34.383 27.4562 37.6164 23.879 37.6164ZM47.6198 37.6164C44.1006 37.6164 41.1978 34.383 41.1978 30.4173C41.1978 26.4471 44.0426 23.2138 47.6198 23.2138C51.2238 23.2138 54.0998 26.4739 54.0417 30.4173C54.0417 34.383 51.2238 37.6164 47.6198 37.6164Z"
-              fill="#FF0000" />
-          </svg></a>
+    </section>
+    <!-- --------------------------accordian------------------- -->
+    <section class="faq bg-yellow">
+      <h1 class="text-center pt-5 pb-4">FAQ</h1>
+      <div class="d-flex align-items-center justify-content-center box-parents">
+        <div class="accordion h-100 w-50" id="accordionExample">
+          <div class="accordion-item boxs">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button amet boxs"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Amet vel eget nisi, sed ut massa turpis sodales nunc.
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body boxs">
+                <p class="enim-text">
+                  Enim scelerisque quisque egestas velit, eget tempus, arcu
+                  pulvinar in. Quis sed at sodales aliquam. Amet fermentum,
+                  lectus nulla tincidunt egestas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item boxs">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button amet boxs"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsetwo"
+                aria-expanded="false"
+                aria-controls="collapsetwo"
+              >
+                Amet vel eget nisi, sed ut massa turpis sodales nunc.
+              </button>
+            </h2>
+            <div
+              id="collapsetwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body boxs">
+                <p class="enim-text">
+                  Enim scelerisque quisque egestas velit, eget tempus, arcu
+                  pulvinar in. Quis sed at sodales aliquam. Amet fermentum,
+                  lectus nulla tincidunt egestas.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <a href="https://x.com/i/flow/login" target="_blank"><svg width="72" height="72" viewBox="0 0 72 72" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M70.8471 14.6985C68.361 15.8001 65.6904 16.5444 62.8829 16.8808C65.7798 15.1474 67.947 12.4193 68.9803 9.20541C66.2586 10.822 63.2799 11.96 60.1735 12.5697C58.0846 10.3394 55.3178 8.86102 52.3026 8.36426C49.2874 7.86749 46.1926 8.38009 43.4986 9.82246C40.8045 11.2648 38.6621 13.5563 37.4038 16.3411C36.1456 19.1258 35.8419 22.2481 36.54 25.2231C31.0251 24.9462 25.6301 23.5128 20.7051 21.016C15.7801 18.5191 11.4351 15.0146 7.95219 10.7298C6.76128 12.7841 6.0765 15.1659 6.0765 17.7025C6.07517 19.9861 6.63752 22.2347 7.71364 24.2488C8.78976 26.2629 10.3464 27.9802 12.2454 29.2484C10.0431 29.1783 7.88928 28.5832 5.96337 27.5127V27.6913C5.96315 30.8941 7.07101 33.9983 9.09898 36.4772C11.127 38.9562 13.9501 40.6571 17.0894 41.2915C15.0464 41.8444 12.9044 41.9258 10.8253 41.5297C11.711 44.2855 13.4363 46.6953 15.7597 48.4218C18.0831 50.1483 20.8882 51.1051 23.7823 51.1582C18.8693 55.015 12.8018 57.107 6.55584 57.0978C5.44943 57.0981 4.34396 57.0335 3.24512 56.9043C9.58515 60.9807 16.9654 63.1441 24.5028 63.1357C50.0181 63.1357 63.9666 42.003 63.9666 23.675C63.9666 23.0795 63.9517 22.4781 63.9249 21.8826C66.6381 19.9205 68.9801 17.4909 70.8411 14.7074L70.8471 14.6985Z"
-              fill="#FF0000" />
-          </svg>
-        </a>
+          <div class="accordion-item boxs">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button amet boxs"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsethree"
+                aria-expanded="false"
+                aria-controls="collapsethree"
+              >
+                Amet vel eget nisi, sed ut massa turpis sodales nunc.
+              </button>
+            </h2>
+            <div
+              id="collapsethree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body boxs">
+                <p class="enim-text">
+                  Enim scelerisque quisque egestas velit, eget tempus, arcu
+                  pulvinar in. Quis sed at sodales aliquam. Amet fermentum,
+                  lectus nulla tincidunt egestas.
+                </p>
+              </div>
+            </div>
+          </div>
 
+          <div class="accordion-item boxs">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button amet boxs"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsefour"
+                aria-expanded="false"
+                aria-controls="collapsefour"
+              >
+                Amet vel eget nisi, sed ut massa turpis sodales nunc.
+              </button>
+            </h2>
+            <div
+              id="collapsefour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body boxs">
+                <p class="enim-text">
+                  Enim scelerisque quisque egestas velit, eget tempus, arcu
+                  pulvinar in. Quis sed at sodales aliquam. Amet fermentum,
+                  lectus nulla tincidunt egestas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item boxs">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button boxs"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsefive"
+                aria-expanded="false"
+                aria-controls="collapsefive"
+              >
+                Amet vel eget nisi, sed ut massa turpis sodales nunc.
+              </button>
+            </h2>
+            <div
+              id="collapsefive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body boxs">
+                <p class="enim-text">
+                  Enim scelerisque quisque egestas velit, eget tempus, arcu
+                  pulvinar in. Quis sed at sodales aliquam. Amet fermentum,
+                  lectus nulla tincidunt egestas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="logo">
+        <img
+          src="./assets/images/logo-two.png"
+          alt="logo"
+          class="text-center w-50 foot-logo mt-4 d-flex"
+        />
+        <div
+          class="icons mt-3 d-flex gap-2 align-items-center justify-content-center"
+        >
+          <a href="https://discord.com/" target="_blank"
+            ><svg
+              width="72"
+              height="55"
+              viewBox="0 0 72 55"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M60.4905 4.98396C55.8572 2.85759 50.9681 1.33997 45.945 0.468922C45.8995 0.461258 45.8528 0.467878 45.8112 0.48787C45.7696 0.507863 45.7353 0.540247 45.7128 0.58057C45.0831 1.69705 44.3864 3.1574 43.8997 4.30067C38.4852 3.47898 32.9778 3.47898 27.5634 4.30067C27.0204 3.02708 26.4061 1.78508 25.7234 0.58057C25.7005 0.540689 25.6661 0.508678 25.6246 0.488749C25.5832 0.468821 25.5366 0.461909 25.4912 0.468922C20.467 1.33531 15.5769 2.85372 10.9457 4.98396C10.9061 4.99908 10.8729 5.02749 10.8519 5.06434C1.58964 18.9042 -0.951461 32.4046 0.294528 45.7354C0.298994 45.7979 0.339187 45.8604 0.388312 45.9006C5.7819 49.8959 11.8147 52.9463 18.2296 54.9218C18.2749 54.936 18.3236 54.9355 18.3686 54.9203C18.4135 54.905 18.4525 54.8758 18.4797 54.8369C19.8552 52.9612 21.0789 50.9828 22.1328 48.9017C22.1548 48.8588 22.1623 48.81 22.1543 48.7625C22.1462 48.7151 22.123 48.6715 22.0882 48.6382C22.0651 48.6164 22.0377 48.5997 22.0078 48.5891C20.0837 47.8496 18.2202 46.9612 16.4343 45.9319C16.3844 45.9036 16.3473 45.8572 16.3307 45.8024C16.3141 45.7475 16.3192 45.6883 16.345 45.6371C16.3602 45.6039 16.3832 45.5748 16.412 45.5523C16.7871 45.2709 17.1623 44.9762 17.5195 44.6814C17.5511 44.656 17.589 44.6397 17.6291 44.6342C17.6692 44.6287 17.7101 44.6342 17.7473 44.6502C29.4435 49.9914 42.1044 49.9914 53.6577 44.6502C53.6963 44.6335 53.7387 44.6275 53.7803 44.633C53.822 44.6386 53.8614 44.6553 53.8944 44.6814C54.2516 44.9762 54.6268 45.2709 55.0019 45.5523C55.0323 45.5745 55.0567 45.6039 55.073 45.6379C55.0892 45.6718 55.0968 45.7093 55.095 45.7469C55.0933 45.7845 55.0822 45.8211 55.0628 45.8534C55.0435 45.8856 55.0164 45.9126 54.9841 45.9319C53.2022 46.9706 51.3364 47.858 49.4061 48.5846C49.3753 48.5958 49.3474 48.6136 49.3242 48.6367C49.3011 48.6599 49.2833 48.6878 49.2722 48.7186C49.2618 48.7484 49.2577 48.7801 49.26 48.8115C49.2623 48.843 49.271 48.8737 49.2855 48.9017C50.3574 50.9784 51.5855 52.9612 52.9342 54.8369C52.9614 54.8758 53.0004 54.905 53.0454 54.9203C53.0903 54.9355 53.139 54.936 53.1843 54.9218C59.6099 52.9524 65.6525 49.9016 71.0524 45.9006C71.0794 45.8819 71.1019 45.8573 71.1181 45.8287C71.1344 45.8001 71.144 45.7682 71.1462 45.7354C72.6378 30.3235 68.6497 16.9347 60.5798 5.06881C60.5717 5.04921 60.5596 5.03153 60.5442 5.01692C60.5288 5.0023 60.5105 4.99107 60.4905 4.98396ZM23.879 37.6164C20.3554 37.6164 17.457 34.383 17.457 30.4173C17.457 26.4471 20.3018 23.2138 23.879 23.2138C27.483 23.2138 30.3546 26.4739 30.301 30.4173C30.301 34.383 27.4562 37.6164 23.879 37.6164ZM47.6198 37.6164C44.1006 37.6164 41.1978 34.383 41.1978 30.4173C41.1978 26.4471 44.0426 23.2138 47.6198 23.2138C51.2238 23.2138 54.0998 26.4739 54.0417 30.4173C54.0417 34.383 51.2238 37.6164 47.6198 37.6164Z"
+                fill="#FF0000"
+              /></svg
+          ></a>
 
-    </div>
-    <p class="copy-right bg-yellow text-center mt-3 mb-0">@Copyright 2021</p>
-  </section>
+          <a href="https://x.com/i/flow/login" target="_blank"
+            ><svg
+              width="72"
+              height="72"
+              viewBox="0 0 72 72"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M70.8471 14.6985C68.361 15.8001 65.6904 16.5444 62.8829 16.8808C65.7798 15.1474 67.947 12.4193 68.9803 9.20541C66.2586 10.822 63.2799 11.96 60.1735 12.5697C58.0846 10.3394 55.3178 8.86102 52.3026 8.36426C49.2874 7.86749 46.1926 8.38009 43.4986 9.82246C40.8045 11.2648 38.6621 13.5563 37.4038 16.3411C36.1456 19.1258 35.8419 22.2481 36.54 25.2231C31.0251 24.9462 25.6301 23.5128 20.7051 21.016C15.7801 18.5191 11.4351 15.0146 7.95219 10.7298C6.76128 12.7841 6.0765 15.1659 6.0765 17.7025C6.07517 19.9861 6.63752 22.2347 7.71364 24.2488C8.78976 26.2629 10.3464 27.9802 12.2454 29.2484C10.0431 29.1783 7.88928 28.5832 5.96337 27.5127V27.6913C5.96315 30.8941 7.07101 33.9983 9.09898 36.4772C11.127 38.9562 13.9501 40.6571 17.0894 41.2915C15.0464 41.8444 12.9044 41.9258 10.8253 41.5297C11.711 44.2855 13.4363 46.6953 15.7597 48.4218C18.0831 50.1483 20.8882 51.1051 23.7823 51.1582C18.8693 55.015 12.8018 57.107 6.55584 57.0978C5.44943 57.0981 4.34396 57.0335 3.24512 56.9043C9.58515 60.9807 16.9654 63.1441 24.5028 63.1357C50.0181 63.1357 63.9666 42.003 63.9666 23.675C63.9666 23.0795 63.9517 22.4781 63.9249 21.8826C66.6381 19.9205 68.9801 17.4909 70.8411 14.7074L70.8471 14.6985Z"
+                fill="#FF0000"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p class="copy-right bg-yellow text-center mt-3 mb-0">@Copyright 2021</p>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="./assets/js/app.js"></script>
-</body>
-
+    <script src="./assets/js/app.js"></script>
+  </body>
 </html>
