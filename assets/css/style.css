@@ -8,7 +8,9 @@
 .bg-yellow {
   background: var(--darkyellow);
 }
-
+.mb-104{
+margin-bottom: 104px;
+}
 .nav-text {
   
   font-size: var(--fs-18);
