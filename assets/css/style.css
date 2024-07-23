@@ -261,7 +261,6 @@ transition: all 300ms linear;
 }
 
 .timeline-font-1 {
-
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
@@ -308,7 +307,7 @@ transition: all 300ms linear;
 }
 
 .boxs {
-  background: #fff03f !important;
+  background: var(--lightyellow) !important;
 }
 .amet {
 
